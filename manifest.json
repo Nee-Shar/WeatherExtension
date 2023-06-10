@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Live Weather",
+  "version": "1.0",
+  "description": "A web extension to view live Weather Data",
+  "icons": {
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "48": "48.png",
+      "128": "128.png"
+    }
+  },
+  "permissions": ["activeTab"],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html"],
+      "matches": ["*://*/*"]
+    },
+    {
+      "resources": ["app.js"],
+      "matches": ["*://*/*"]
+    }
+  ]
+}

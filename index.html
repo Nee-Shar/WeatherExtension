@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        height: 300px;
+        width: 300px;
+        background-color: rgb(195, 249, 249);
+        font-family: "Geologica", sans-serif;
+        border-radius: 20px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="cname">City name:</label>
+    <input type="text" id="cname" name="cname" placeholder="Delhi" />
+    <button id="weatherButton">Go</button>
+    <div>
+      <h3 id="desc"></h3>
+      <h3 id="temp"></h3>
+      <h3 id="feelsLike"></h3>
+      <h3 id="humid"></h3>
+      <h3 id="wind"></h3>
+      <h6 id="last"></h6>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
