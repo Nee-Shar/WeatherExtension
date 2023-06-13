@@ -27,6 +27,16 @@ function getW() {
       document.getElementById("wind").innerHTML =
         " Wind: " + data.wind.speed + " m/s";
 
+      const weatherIconCode = data.weather[0].icon;
+
+      // Construct the URL for the weather icon image
+      const imageUrl = `http://openweathermap.org/img/w/${weatherIconCode}.png`;
+
+      console.log(imageUrl);
+      const imageElement = document.getElementById("weather-image");
+
+      imageElement.style.visibility = "visible";
+      imageElement.setAttribute("src", imageUrl);
       const date = new Date(data.sys.sunrise * 1000);
       const formattedTime = date.toLocaleString();
       console.log(formattedTime);
