@@ -20,9 +20,11 @@ function getW() {
         "Temp: " + data.main.temp + " degree cel";
       document.getElementById("feelsLike").innerHTML =
         "Feels like: " + data.main.feels_like + " degree cel";
+
       document.getElementById("humid").innerHTML =
         " Humidity: " + data.main.humidity;
-      document.getElementById("humid").innerHTML =
+
+      document.getElementById("wind").innerHTML =
         " Wind: " + data.wind.speed + " m/s";
 
       const date = new Date(data.sys.sunrise * 1000);
